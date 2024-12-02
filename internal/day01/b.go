@@ -12,7 +12,7 @@ import (
 
 func SolveB() {
 	result, duration, mem := utils.MeasureExecution(solveb)
-	fmt.Printf("\n[D1P2] Result: %d | Memory: %v bytes | Duration: %v\n\n", result, mem, duration)
+	fmt.Printf("\n[D1P2] Result: %d | Memory: %s | Duration: %v\n\n", result, utils.FormatBytes(mem), duration)
 }
 
 func solveb() int {
@@ -28,8 +28,8 @@ func solveb() int {
 	for scanner.Scan() {
 		line := scanner.Text()
 		split := strings.Split(line, "   ")
-		left = append(left, utils.StringToInt(split[0]))
-		right = append(right, utils.StringToInt(split[1]))
+		left = append(left, utils.S2i(split[0]))
+		right = append(right, utils.S2i(split[1]))
 	}
 
 	m := make(map[int]int)
