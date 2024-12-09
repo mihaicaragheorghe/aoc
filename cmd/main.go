@@ -5,6 +5,7 @@ import (
 	"github.com/mihaicaragheorghe/aoc/internal/day02"
 	"github.com/mihaicaragheorghe/aoc/internal/day03"
 	"github.com/mihaicaragheorghe/aoc/internal/day04"
+	"github.com/mihaicaragheorghe/aoc/internal/day05"
 )
 
 func main() {
@@ -19,4 +20,7 @@ func main() {
 
 	day04.SolveA()
 	day04.SolveB()
+
+	day05.SolveA()
+	day05.SolveB()
 }
