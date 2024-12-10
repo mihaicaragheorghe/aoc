@@ -40,10 +40,10 @@ func solveA() int {
 	return found
 }
 
-func find(matrix [][]rune, i, j int, needle string) int {
+func find(hay [][]rune, i, j int, needle string) int {
 	matches := 0
 	for _, d := range Directions {
-		if backtrack(matrix, needle, d, i, j, 1) {
+		if backtrack(hay, needle, d, i, j, 1) {
 			matches++
 		}
 	}
